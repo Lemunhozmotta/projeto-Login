@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Mobile First */
 
 :root {
     --verde: #49a09d;
@@ -12,7 +13,7 @@
  }
 
  bady, html {
-    background-color: var(--lilas);
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
     height: 100vh;
     width: 100vw;
  }
@@ -34,11 +35,13 @@ section#login {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
     display: block;
-    background: #5f2c82 url(img/metal.jpg) no-repeat;
+    background: #5f2c82 url(../img/metal.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
     height: 200px;
