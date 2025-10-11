@@ -17,7 +17,21 @@
                 <h1>Login</h1>
                 <p>Seja be-vindo(a). faça login para acessar sua conta</p>
                 <form action="login.html" method="post">
-
+                    <div class="campo">                        
+                        <input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" required>
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div>                        
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required>
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="lembrar" id="ilembra">
+                        <label for="ilembra">Lembrar-me</label>
+                    </div>
+                    <div class="campo">
+                        <button type="submit">Entrar</button>
+                    </div>
                 </form>
             </div>
         </section>
