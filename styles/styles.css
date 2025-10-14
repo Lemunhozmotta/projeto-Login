@@ -52,6 +52,10 @@ section#login > div#formulario {
     padding: 10px;
 }
 
+div {
+    text-align: center;
+}
+
 div#formulario h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -60,4 +64,24 @@ div#formulario h1 {
 div#formulario p {
     font-size: 0.8em;
     text-align: center;
+}
+
+.campo {
+    display: block;
+    text-align: center;
+}
+
+div > label {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.campoText > input {
+    text-align: center;
+    width: 150px;
+}
+
+div#esqueci {
+    font-size: 0.7em;
+    margin-top: 10px;
 }
