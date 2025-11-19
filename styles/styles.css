@@ -39,7 +39,7 @@ section#login {
     transition-timing-function: ease;
 }
 
-section#login > div#imagem{
+section#login div#imagem{
     display: block;
     background: #5f2c82 url(../img/metal.jpg) no-repeat;
     background-size: cover;
@@ -47,7 +47,7 @@ section#login > div#imagem{
     height: 200px;
 }
 
-section#login > div#formulario {
+section#login div#formulario {
     display: block;
     padding: 10px;
 }
@@ -57,6 +57,7 @@ div {
 }
 
 div#formulario h1 {
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -64,6 +65,12 @@ div#formulario h1 {
 div#formulario p {
     font-size: 0.8em;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+div label {
+    font-size: 0.8em;
+    margin-bottom: 5px;
 }
 
 .campo {
@@ -71,14 +78,53 @@ div#formulario p {
     text-align: center;
 }
 
-div > label {
-    font-size: 0.8em;
+.campoText {
+    background-color: #5f2c82;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
     margin-bottom: 5px;
 }
 
-.campoText > input {
+.campoText span {
+    color: white;
+    transform: translateY(5px);
+}
+
+.campoText input {
+    background-color: #c0fcfa;
     text-align: center;
-    width: 150px;
+    width: calc(100% - 34px);
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    transform: translateY(-1.8px);
+}
+
+.campoText input:focus-within {
+    background-color: white;
+}
+
+.campoText label {
+    display: none;
+}
+
+.campo button {
+    background-color: #49a09d;
+    color: white;
+    cursor: pointer;
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.501);
+}
+
+.campo button:hover {
+    background-color: #156361;
 }
 
 div#esqueci {
